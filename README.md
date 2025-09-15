@@ -1,58 +1,29 @@
-Micro-Certification Platform
+# Micro-Certification Platform
 
-This is a small web app where users can take quizzes and get certificates.
-It is made with React (frontend), Node.js/Express (backend), and MongoDB (database).
+A simple web app to take quizzes and get certificates.  
+Made with **React**, **Node.js/Express**, and **MongoDB**.
 
-Features
+## Features
+- User Register & Login
+- Take Quizzes
+- Instant Score
+- Download Certificate
+- View Quiz History
 
-Register & Login
+## How to Run
+1. Clone this repo  
+2. Install dependencies  
+   ```bash
+   npm install
+Create .env file in backend with:
 
-Take quizzes with questions
+ini
+Copy code
+MONGODB_URI=your_mongo_url
+JWT_SECRET=your_secret
+Start the app
 
-See score instantly
-
-Download certificate if passed
-
-View past quiz history
-
-Tech Used
-
-Frontend: React + Tailwind CSS
-
-Backend: Node.js + Express
-
-Database: MongoDB
-
-How to Run
-
-Clone the repo
-
-Install dependencies
-
-npm install
-
-
-Set up .env file with MongoDB URI and JWT secret
-
-Run the app
-
+bash
+Copy code
 npm run dev
-
-
-Open browser at http://localhost:5173
-
-Project Structure
-backend/   → APIs, models, server
-frontend/  → React app
-
-Usage Flow
-
-Login / Register
-
-Choose a quiz
-
-Answer questions
-
-Get score
-
-Download certificate
+Open http://localhost:5173
