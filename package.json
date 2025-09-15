@@ -9,7 +9,7 @@
     "backend:install": "cd backend && npm install",
     "frontend:install": "cd frontend && npm install",
     "install:all": "npm run backend:install && npm run frontend:install",
-    "build": "npm install && cd frontend && npm install && ./node_modules/.bin/vite build",
+    "build": "npm run install:all && cd frontend && npx vite build",
     "start": "cd backend && npm start",
     "seed": "cd backend && npm run seed"
   },
